@@ -56,6 +56,6 @@ Tips
 
     Also, we have a [sample](res/word_tsne_small.html) only trained by part data.   
 
-#### Collaborative filter
+#### Collaborative filtering
 This user-based method give us more quantified way to measure our model by precision and recall.
   
