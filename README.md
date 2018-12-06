@@ -20,24 +20,24 @@ data, we will explore word embedding algorithms and recommendation systems to bu
 
 ## Method
 
-### 1. Data scrawl
+### 1. Data Crawling
 
 ```chef_spider.py``` 
-- Utilize parallel scrawling and proxies to fetch data more efficiently
+- Utilize parallel crawling and proxies to fetch data more efficiently
 - We run this spider on Google Cloud, which created two virtual machines and each contains 8vCPUs.
 
 ### 2. Map to fixed dictionary
 
 ```preprocess.py```
-- Map users' favorite recipes into a fixed-length dictionary, which has 1871 unique keys represents recipe names.
-- This dictionary also have corresponding english transcription of its chinese recipe name.
+- Map users' favorite recipes into a fixed-length dictionary, which has 1871 unique keys representing recipe names.
+- This dictionary also has corresponding english translation of each dishe's chinese recipe name.
 
 ### 3. Train models
 
 #### Word2Vec
-This content-based method could tackle the issue of cold start, and intuitively give us recommendations based on 
+This content-based method could tackle the issue of a cold start, and intuitively gives us recommendations based on 
 - your input keywords   
-- other users appetites in our database 
+- other users' dish preferences in our database 
 
 ```word2vec.py```
 
@@ -56,6 +56,6 @@ Tips
 
     Also, we have a [sample](res/word_tsne_small.html) only trained by part data.   
 
-#### Collaborative filter
+#### Collaborative Filtering
 This user-based method give us more quantified way to measure our model by precision and recall.
   
